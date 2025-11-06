@@ -1,6 +1,6 @@
 # Hint
 
-That seal value is still TBD, and it's not going to fix itself. There's a
-trick out there too, on a page that never made the main journal —
-`git branch -a` will turn it up. Rebasing onto the corrected master
-config comes next; expect to have to pick a side when it conflicts.
+Once the config's rebased and the trick's cherry-picked in, check this
+cargo against the manifest. `git lfs ls-files` and a look at the raw
+file will tell you if the goods actually made it into the hold. If it's
+just a pointer, `git lfs pull` fetches the real cargo from the LFS store.
